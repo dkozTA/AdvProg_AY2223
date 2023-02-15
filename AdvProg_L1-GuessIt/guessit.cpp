@@ -28,7 +28,6 @@ int getPlayerGuess() {
     int number;
     cout << endl << "Enter your guess from 1 to 100: ";
     cin >> number;
-    timesguessed++;
     return number;
 
 }
