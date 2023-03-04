@@ -166,4 +166,4 @@ void processData(const char ch, const string& word,
         updateIncorrectGuess(incorrectGuess);
         updateEnteredChars(ch,incorrectChars);
     }
-}
+

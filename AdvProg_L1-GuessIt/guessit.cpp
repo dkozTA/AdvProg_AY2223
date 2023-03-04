@@ -2,8 +2,9 @@
 #include <cstdlib>
 #include <ctime>
 #include "guessit.h"
-
 using namespace std;
+
+
 
 
 /***
@@ -18,6 +19,7 @@ int generateRandomNumber() {
 }
 
 
+
 /***
     Args:
         
@@ -29,7 +31,6 @@ int getPlayerGuess() {
     cout << endl << "Enter your guess from 1 to 100: ";
     cin >> number;
     return number;
-
 }
 
 
@@ -61,6 +62,8 @@ string getAnswer(int number, int randomNumber) {
 }
 
 
+
+
 /***
     Args:
         answer (string): answer from computer after compare numbers
@@ -75,6 +78,8 @@ bool checkSuccess(string answer) {
     }
     return false;
 }
+
+
 
 
 /***
@@ -93,6 +98,7 @@ bool checkContinuePlaying(char isContinued) {
 }
 
 
+
 /***
     Args:
         
@@ -106,8 +112,6 @@ char getPlayerOpinion() {
     cin >> isContinued;
     return isContinued;
 }
-
-
 void playGuessIt() {
     int randomNumber = generateRandomNumber();
     int number;
@@ -119,7 +123,6 @@ void playGuessIt() {
         cout << answer << endl;
     } while (!checkSuccess(answer));
 }
-
 int run() {
     srand(time(0));
     char isContinued;
