@@ -3,10 +3,6 @@
 #include <ctime>
 #include "guessit.h"
 using namespace std;
-
-
-
-
 /***
     Args:
         
@@ -17,9 +13,6 @@ int generateRandomNumber() {
     // TODO: Return the random number in range 1 to 100
     return rand() % 100 + 1;
 }
-
-
-
 /***
     Args:
         
@@ -32,8 +25,6 @@ int getPlayerGuess() {
     cin >> number;
     return number;
 }
-
-
 /***
     Args:
         number (int): answer number from player
@@ -60,10 +51,6 @@ string getAnswer(int number, int randomNumber) {
     }
     return answer;
 }
-
-
-
-
 /***
     Args:
         answer (string): answer from computer after compare numbers
@@ -78,10 +65,6 @@ bool checkSuccess(string answer) {
     }
     return false;
 }
-
-
-
-
 /***
     Args:
         isContinued (char): player's choice
@@ -96,9 +79,6 @@ bool checkContinuePlaying(char isContinued) {
     }
     return result;
 }
-
-
-
 /***
     Args:
         
